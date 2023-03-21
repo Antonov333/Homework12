@@ -1,9 +1,10 @@
-public class Main {
+package Package12;
+
+public class Homework12 {
+
     public static int homeworkNumber = 12;
     public static void main(String[] args) {
         printTitle(homeworkNumber);
-
-        startingWithObljectsAndClasses() ;
 
         Author Beaumarchais = new Author("Пьер", "Бомарше") ;
         System.out.println(Beaumarchais.getFirstName()+" "+Beaumarchais.getLastname());
@@ -20,11 +21,5 @@ public class Main {
 
     public static void printBottomMessage(int homeworkNo, String status) {
         System.out.println("\nДомашнее задание " + homeworkNo + " " + status + "\n");
-    }
-
-    public static void startingWithObljectsAndClasses() {
-        Bicycle myBike = new Bicycle("mountain bike", 26.0f, 20.0f);
-        System.out.println("My bicycle is " + myBike.getType() + " with " + myBike.getWheelSize() + "\" wheels and " +
-                myBike.getFrameSize() + "\" frame\n");
     }
 }
