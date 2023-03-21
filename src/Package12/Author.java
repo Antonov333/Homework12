@@ -1,8 +1,8 @@
 package Package12;
 
 public class Author {
-    String firstName;
-    String lastname ;
+    private String firstName;
+    private String lastname ;
     public Author(String first, String last) {
         firstName = first ;
         lastname = last ;

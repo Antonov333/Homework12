@@ -4,16 +4,15 @@ import java.util.Arrays;
 
 public class Homework12 {
 
-    public static int homeworkNumber = 12;
-    public static void main(String[] args) {
+        public static void main(String[] args) {
+        int homeworkNumber = 12 ;
         printTitle(homeworkNumber);
 
         Author beaumarchais = new Author("Пьер", "Бомарше") ;
        // System.out.println(Beaumarchais.getFirstName()+" "+Beaumarchais.getLastname());
 
         Book marriageOfFigaro = new Book("Figaro", beaumarchais,2015) ;
-        marriageOfFigaro.setAuthor(beaumarchais);
-        marriageOfFigaro.setYearOfPublishing(2015);
+        
         marriageOfFigaro.setName("Безумный день, или Женитьба Фигаро (сборник)");
         Author writer = marriageOfFigaro.getAuthor();
         System.out.println("Автор книги: " + writer.getFirstName()+ " " + writer.getLastname());
@@ -23,19 +22,12 @@ public class Homework12 {
         Author baltiAndGalloway = new Author("Haythem Balti,", "Alan Galloway") ;
 
         Book jobReadyJava = new Book("Job Ready Java", baltiAndGalloway , 0);
-
         jobReadyJava.printBookInfo();
-
         jobReadyJava.setYearOfPublishing(2021);
-
         System.out.println("");
         jobReadyJava.printBookInfo();
 
-
-
         printBottomMessage(homeworkNumber, "в работе");
-
-
 
     }
     public static void printTitle(int homeworkNo) {

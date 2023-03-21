@@ -1,9 +1,9 @@
 package Package12;
 
 public class Book {
-    String name ;
-    Author author ;
-    int yearOfPublishing ;
+    private String name ;
+    private Author author ;
+    private int yearOfPublishing ;
 
     public Book (String bookName, Author writer, int year) {
         this.name = bookName;
