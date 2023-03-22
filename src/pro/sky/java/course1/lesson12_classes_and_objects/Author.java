@@ -1,4 +1,4 @@
-package Package12;
+package pro.sky.java.course1.lesson12_classes_and_objects;
 
 public class Author {
     private String firstName;
