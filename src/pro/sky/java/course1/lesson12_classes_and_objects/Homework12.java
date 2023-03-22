@@ -19,8 +19,7 @@ public class Homework12 {
         jobReadyJava.setYearOfPublishing(2021);
         jobReadyJava.printBookInfo();
 
-        printBottomMessage(homeworkNumber, "в работе");
-
+        printBottomMessage(homeworkNumber, "выполнено");
 
     }
 
