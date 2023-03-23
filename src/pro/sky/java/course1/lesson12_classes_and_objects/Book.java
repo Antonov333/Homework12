@@ -44,14 +44,15 @@ public class Book {
         System.out.println("Год издания: " + this.getYearOfPublishing());
         System.out.println();
     }
-    public String toString () {
-        return author.toString() + " \"" + name + "\" " + yearOfPublishing ;
+
+    public String toString() {
+        return author.toString() + " \"" + name + "\" " + yearOfPublishing;
     }
 
     public boolean equals(Book sample) {
         return author.equals(sample.getAuthor())
                 && name.equals(sample.getName())
-                && yearOfPublishing == sample.yearOfPublishing ;
+                && yearOfPublishing == sample.yearOfPublishing;
     }
 
 }

@@ -18,11 +18,11 @@ public class Author {
     }
 
     public String toString() {
-        return firstName + " " + lastName ;
+        return firstName + " " + lastName;
     }
 
     public boolean equals(Author sample) {
-        return firstName == sample.firstName && lastName == sample.lastName ;
+        return firstName == sample.firstName && lastName == sample.lastName;
     }
 
 }
