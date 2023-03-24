@@ -1,5 +1,8 @@
 package pro.sky.java.course1.lesson12_classes_and_objects;
 
+import pro.sky.java.course1.Lesson13_Methods_of_objects.Author;
+import pro.sky.java.course1.Lesson13_Methods_of_objects.Book;
+
 public class Homework12 {
 
     public static void main(String[] args) {

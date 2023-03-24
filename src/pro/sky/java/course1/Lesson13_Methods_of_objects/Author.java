@@ -26,7 +26,7 @@ public class Author {
     }
 
     public int hashCode() {
-        int magnifier = 7;
+        int magnifier = 19;
         return magnifier * (firstName.hashCode() + lastName.hashCode());
     }
 
