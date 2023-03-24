@@ -13,9 +13,14 @@ public class Homework13 {
 
         Author goethe = new Author("Johann Wolfgang", "von Goethe");
         Author sample = goethe;
-        System.out.println("goethe: \t" + goethe);
-        System.out.println("sample: \t" + sample);
-        System.out.println(goethe.equals(sample));
+        System.out.println("goethe: \t" + goethe + " " + goethe.hashcode());
+        System.out.println("sample: \t" + sample + " " + sample.hashcode());
+        System.out.println(goethe.equals(sample) + "\n");
+
+        System.out.println("goldsmith: \t" + goldsmith + " " + goldsmith.hashcode());
+        System.out.println("sample: \t" + sample + " " + sample.hashcode());
+        System.out.println(goldsmith.equals(sample));
+
 
         Book faust = new Book("Faust", goethe, 1981);
         Book otherBook = faust;

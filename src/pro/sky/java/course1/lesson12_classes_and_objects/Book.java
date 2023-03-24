@@ -50,9 +50,16 @@ public class Book {
     }
 
     public boolean equals(Book sample) {
-        return author.equals(sample.getAuthor())
+        return sample != null
+                && author.equals(sample.getAuthor())
                 && name.equals(sample.getName())
                 && yearOfPublishing == sample.yearOfPublishing;
+
+    }
+
+    public int hashcode() {
+                int magnifier = 31 ;
+        return magnifier * ( author.hashcode() + name.hashCode() + yearOfPublishing) ;
     }
 
 }

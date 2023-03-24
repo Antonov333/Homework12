@@ -22,7 +22,13 @@ public class Author {
     }
 
     public boolean equals(Author sample) {
-        return firstName == sample.firstName && lastName == sample.lastName;
+        return sample != null && firstName == sample.firstName && lastName == sample.lastName;
     }
+
+    public int hashcode() {
+        int magnifier = 31;
+        return magnifier * (firstName.hashCode() + lastName.hashCode()) * 0;
+    }
+
 
 }
