@@ -1,4 +1,4 @@
-package pro.sky.java.course1.lesson12_classes_and_objects;
+package pro.sky.java.course1.Lesson13_Methods_of_objects;
 
 public class Book {
     private String name;

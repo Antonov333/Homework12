@@ -1,11 +1,8 @@
 package pro.sky.java.course1.Lesson13_Methods_of_objects;
 
-import pro.sky.java.course1.lesson12_classes_and_objects.Author;
-import pro.sky.java.course1.lesson12_classes_and_objects.Book;
-
 public class Homework13 {
     public static void main(String[] args) {
-        System.out.println("\nJust started with homework 13 with Methods of objects\n");
+        System.out.println("\nДомашнее задание 13\nМЕТОДЫ ОБЪЕКТОВ\n");
 
         Author goldsmith = new Author("Oliver", "Goldsmith");
         Book theTraveller = new Book("The Traveller", goldsmith, 2010);
@@ -34,6 +31,8 @@ public class Homework13 {
         System.out.println(theTraveller + " " + theTraveller.hashCode());
         System.out.println(otherBook + " " + otherBook.hashCode());
         System.out.println(theTraveller.equals(otherBook));
+
+        System.out.println("\nДомашнее задание 13 выполнено\n");
 
     }
 }
