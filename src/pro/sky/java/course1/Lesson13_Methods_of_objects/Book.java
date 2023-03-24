@@ -57,9 +57,9 @@ public class Book {
 
     }
 
-    public int hashcode() {
-        int magnifier = 31;
-        return (name.hashCode() + author.hashcode() + yearOfPublishing) * magnifier;
+    public int hashCode() {
+        int magnifier = 17;
+        return (name.hashCode() + author.hashCode() + yearOfPublishing) * magnifier;
     }
 
 }

@@ -10,12 +10,12 @@ public class Homework13 {
 
         Author goethe = new Author("Johann Wolfgang", "von Goethe");
         Author sample = goethe;
-        System.out.println("goethe: \t" + goethe + " " + goethe.hashcode());
-        System.out.println("sample: \t" + sample + " " + sample.hashcode());
+        System.out.println("goethe: \t" + goethe + " " + goethe.hashCode());
+        System.out.println("sample: \t" + sample + " " + sample.hashCode());
         System.out.println(goethe.equals(sample) + "\n");
 
-        System.out.println("goldsmith: \t" + goldsmith + " " + goldsmith.hashcode());
-        System.out.println("sample: \t" + sample + " " + sample.hashcode());
+        System.out.println("goldsmith: \t" + goldsmith + " " + goldsmith.hashCode());
+        System.out.println("sample: \t" + sample + " " + sample.hashCode());
         System.out.println(goldsmith.equals(sample));
 
 

@@ -25,8 +25,8 @@ public class Author {
         return sample != null && firstName == sample.firstName && lastName == sample.lastName;
     }
 
-    public int hashcode() {
-        int magnifier = 5;
+    public int hashCode() {
+        int magnifier = 7;
         return magnifier * (firstName.hashCode() + lastName.hashCode());
     }
 
