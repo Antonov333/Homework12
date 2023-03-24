@@ -57,9 +57,14 @@ public class Book {
 
     }
 
+    @Override
     public int hashCode() {
-        int magnifier = 17;
-        return (name.hashCode() + author.hashCode() + yearOfPublishing) * magnifier;
+        if (this == null) {
+            return 0;
+        } else {
+            int magnifier = 17;
+            return (name.hashCode() + author.hashCode() + yearOfPublishing) * magnifier;
+        }
     }
 
 }

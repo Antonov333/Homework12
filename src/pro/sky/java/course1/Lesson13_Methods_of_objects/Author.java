@@ -22,12 +22,20 @@ public class Author {
     }
 
     public boolean equals(Author sample) {
-        return sample != null && firstName == sample.firstName && lastName == sample.lastName;
+        if (sample.getClass() != this.getClass()) {
+            return false;
+        } else {
+            return sample != null && firstName == sample.firstName && lastName == sample.lastName;
+        }
     }
 
     public int hashCode() {
-        int magnifier = 19;
-        return magnifier * (firstName.hashCode() + lastName.hashCode());
+        if (this == null) {
+            return 0;
+        } else {
+            int magnifier = 31;
+            return magnifier * (firstName.hashCode() + lastName.hashCode());
+        }
     }
 
 
