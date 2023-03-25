@@ -1,5 +1,7 @@
 package pro.sky.java.course1.Lesson13_Methods_of_objects;
 
+import java.util.Objects;
+
 public class Book {
     private String name;
     private Author author;
@@ -49,22 +51,17 @@ public class Book {
         return author.toString() + " \"" + name + "\" " + yearOfPublishing;
     }
 
-    public boolean equals(Book sample) {
-        return sample != null
-                && author.equals(sample.getAuthor())
-                && name.equals(sample.getName())
-                && yearOfPublishing == sample.yearOfPublishing;
-
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return yearOfPublishing == book.yearOfPublishing && name.equals(book.name) && author.equals(book.author);
     }
 
     @Override
     public int hashCode() {
-        if (this == null) {
-            return 0;
-        } else {
-            int magnifier = 17;
-            return (name.hashCode() + author.hashCode() + yearOfPublishing) * magnifier;
-        }
+        return Objects.hash(name, author, yearOfPublishing);
     }
 
 }
